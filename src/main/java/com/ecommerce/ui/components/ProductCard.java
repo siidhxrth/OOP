@@ -78,13 +78,13 @@ public class ProductCard extends JPanel {
         priceLabel.setBorder(BorderFactory.createEmptyBorder(0, 0, UIConstants.PADDING_MEDIUM, 0));
         
         // Add button with icon
-        JPanel buttonContainer = new JPanel(new FlowLayout(FlowLayout.CENTER, 6, 0));
+        buttonContainer = new JPanel(new FlowLayout(FlowLayout.CENTER, 6, 0));
         buttonContainer.setBackground(UIConstants.BACKGROUND_WHITE);
         
         LineIcon arrowIcon = new LineIcon(LineIcon.IconType.ARROW_RIGHT, UIConstants.PRIMARY_BLUE, 16, 2.0f);
         buttonContainer.add(arrowIcon);
         
-        addButton = new JButton("Import Product");
+        addButton = new JButton("Add to Cart");
         UIConstants.applyPrimaryButtonStyle(addButton);
         addButton.setPreferredSize(new Dimension(200, UIConstants.BUTTON_HEIGHT_SMALL));
         addButton.setFont(new Font("Segoe UI", Font.BOLD, 12));

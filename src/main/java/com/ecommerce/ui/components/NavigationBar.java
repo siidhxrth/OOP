@@ -51,7 +51,7 @@ public class NavigationBar extends JPanel {
         ));
         
         // Logo with icon
-        JPanel logoPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 8, 0));
+        logoPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 8, 0));
         logoPanel.setBackground(UIConstants.BACKGROUND_WHITE);
         logoPanel.add(LineIcon.createLogoIcon());
         logoLabel = new JLabel("CoinCart");
@@ -60,7 +60,7 @@ public class NavigationBar extends JPanel {
         logoPanel.add(logoLabel);
         
         // Navigation buttons with icons
-        JPanel productsPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 6, 0));
+        productsPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 6, 0));
         productsPanel.setBackground(UIConstants.BACKGROUND_WHITE);
         productsPanel.add(LineIcon.createProductsIcon());
         productsButton = new JButton("Products");
@@ -70,7 +70,7 @@ public class NavigationBar extends JPanel {
         productsButton.setFocusPainted(false);
         productsPanel.add(productsButton);
         
-        JPanel gamesPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 6, 0));
+        gamesPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 6, 0));
         gamesPanel.setBackground(UIConstants.BACKGROUND_WHITE);
         gamesPanel.add(LineIcon.createGameIcon());
         gamesButton = new JButton("Games");
@@ -81,7 +81,7 @@ public class NavigationBar extends JPanel {
         gamesPanel.add(gamesButton);
         
         // Coin count with icon
-        JPanel coinPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 6, 0));
+        coinPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 6, 0));
         coinPanel.setBackground(UIConstants.BACKGROUND_WHITE);
         coinPanel.add(LineIcon.createCoinsIcon());
         coinCountLabel = new JLabel("0 Coins");
@@ -90,7 +90,7 @@ public class NavigationBar extends JPanel {
         coinPanel.add(coinCountLabel);
         
         // Cart button with icon and count
-        JPanel cartPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 6, 0));
+        cartPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 6, 0));
         cartPanel.setBackground(UIConstants.BACKGROUND_WHITE);
         cartPanel.add(LineIcon.createCartIcon());
         cartButton = new JButton("Cart");
@@ -110,7 +110,7 @@ public class NavigationBar extends JPanel {
         cartCountLabel.setPreferredSize(new Dimension(20, 20));
         
         // User button with icon
-        JPanel userPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 6, 0));
+        userPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 6, 0));
         userPanel.setBackground(UIConstants.BACKGROUND_WHITE);
         userPanel.add(LineIcon.createUserIcon());
         userButton = new JButton(currentUser.getName());
